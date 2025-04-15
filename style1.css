@@ -1,0 +1,396 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.container p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+header {
+  background-color: #333;
+  color: #333;
+  padding: -5px;
+}
+
+.hero-content {
+  text-align: center;
+  color: #91310b;
+  background-size: cover;
+}
+
+.register-button {
+  float: right;
+  margin-right: 10px;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 auto;
+  float: left;
+  padding: auto;
+  height: 10;
+  font-size: 18px;
+
+}
+
+nav {
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  -webkit-border-radious: 5px;
+  background-color: #333;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+nav a:link,
+nav a:visited {
+  color: #ffffff;
+  padding: 10px 25px;
+  height: 20px;
+}
+
+nav a:hover,
+nav a:active,
+nav .active a:link,
+nav .active a:visited {
+  background-color: #f38d18;
+  text-shadow: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* slide show */
+
+.slideshow-container img {
+  width: 75%;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #333;
+  border-radius: 30px;
+}
+
+.slideshow-container img:first-child {
+  display: block;
+}
+
+.slideshow-container img.active {
+  display: block;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* --------------------------------------------------------------------------------------------------  */
+.about {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.courses {
+  padding: 40px 0;
+}
+
+.course-card {
+  margin-bottom: 30px;
+}
+
+.course-card img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 13px;
+  border-radius: 15px;
+}
+
+.course-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.course-card p {
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 13px;
+  text-align: center;
+}
+
+
+/*------------------------------------------------btn--------------------------*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 25px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 17px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #dddddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #f38d18;
+}
+
+.navbar {
+  display: flex;
+  height: 62px;
+
+}
+
+/*-------------------------------------map-----------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+#lbtn {
+  background-color: red;
+  color: white;
+  width: 95px;
+  height: 35px;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 19px;
+}
+
+.logout {
+  display: inline-block;
+  position: relative;
+  left: 89%;
+  top: -58px
+}
+
+a {
+  position: relative;
+  top: 18px;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    transform-style: preserve-3d;
+    perspective: 800px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    margin: 0;
+    transform: translateZ(50px);
+  }
+  
+  nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+    animation: slideDown 1s ease-in;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  } */

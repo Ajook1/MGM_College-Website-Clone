@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<div style="font-family: 'Times New Roman', Times, serif;">
+  <table style="background-color: rgb(246, 80, 9);">
+    <tr>
+      <th align="left" rowspan="2" style="width: 7%;"> <img src="images\logo.png" alt="logo" style="width: 100%;"></th>
+      <td style="color: white;">
+        <p>
+        <h1> Mahatma Gandhi Missions College of Engineering</h1>
+        </p>
+        <p>Affiated to Dr. BATU, Lonere. Accredited by NAAC with A++ Grade(2023),</p>
+        <p>NBA Accredited (2006-09),Approved by AICTE, New Delhi</p>
+      </td>
+      <td rowspan="2"><img src="images\NAAC.png"></td>
+    </tr>
+  </table>
+</div>
+  <header>
+
+    <div class="navbar">
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="placement.html">Placements</a></li>
+          <li><a href="addmission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"> <u> Department </u></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+<body>
+  <h1 id="h1">College Admission Form</h1>
+  <div class="container1">
+  <form action="db.php" method="POST" enctype="multipart/form-data">
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name" required><br><br>
+    
+    <label for="mother_name">Mother's Name:</label>
+    <input type="text"  name="mother_name" required><br><br>
+
+    <label for="address">Address:</label>
+    <textarea  name="address" rows="4" required></textarea><br><br>
+
+    <label for="Email">Email:</label>
+    <input type="email"  name="Email" required><br><br>
+
+    <label for="mobile_number">Mobile Number:</label>
+    <input type="number"  name="Mobile" min="6000000000" max="9999999999" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date"  name="dob" required><br><br>
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+      <option value="none">none</option>
+      <option value="general">General</option>
+      <option value="obc">OBC</option>
+      <option value="sc">SC</option>
+      <option value="st">ST</option>
+    </select><br><br>
+
+    <label for="Gender">Gender:</label>
+    <input type="radio" value="Male" name="gender">Male<input type="radio" value="Female" name="gender">Female<br><br>
+   
+    <label for="course">Select Course:</label>
+    <select id="course" name="course" required>
+      <option value="none">none</option>
+      <option value="COMPUTER">Compurt Science & Enginerring</option>
+      <option value="Electronic">Electronic & Telicomunication</option>
+      <option value="it">Information Technology</option>
+      
+    </select><br><br>
+    <label for="image">Upload Image:</label> 
+    <input type="file" name="image" accept="image/*" required><br><br>
+
+   
+    <p>
+      <strong>Declaration:</strong><input type="checkbox" id="declaration" name="declaration" required>
+      I hereby declare that the information provided above is true and accurate to the best of my knowledge.
+    </p>
+
+     
+
+   <div class="container">
+    <input type="submit" value="Register">
+
+   </div>
+  
+ </form>
+</div>
+ <br><br>
+
+  
+ 
+</body>
+</html>

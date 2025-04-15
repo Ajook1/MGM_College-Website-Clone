@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>MGMCOE</title>
+  <link rel="stylesheet" href="style1.css">
+  
+  <style>
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    .container2 {
+  max-width: 92%;
+  margin: 5px 32px;
+  background-color: #ffffff;
+  padding-top: 0%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.map-container {
+  width: 40%;
+  padding-bottom: 52.25%;
+  margin-bottom: 3em;
+  position: relative;
+  /* border: 2px solid #ccc; */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%
+}
+
+.lord {
+  width: 60%;
+  padding: 100px;
+  margin: auto;
+  text-align: justify;
+}
+
+.contact {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.phone {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social {
+  text-align: justify;
+}
+
+.social a {
+  display: inline-block;
+  font-size: 25px;
+  padding: 2px;
+  margin: 10px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+  }
+
+  .lord {
+    width: 100%;
+}
+}
+
+</style>
+
+<script src="btn.js"></script>
+
+</head>
+
+<body style="font-family: 'Times New Roman', Times, serif;">
+  <table style="background-color: rgb(246, 80, 9);">
+    <tr>
+      <th align="left" rowspan="2" style="width: 7%;"> <img src="images\logo.png" alt="logo" style="width: 100%;"></th>
+      <td style="color: white;">
+        <p>
+        <h1> Mahatma Gandhi Missions College of Engineering</h1>
+        </p>
+        <p>Affiated to Dr. BATU, Lonere. Accredited by NAAC with A++ Grade(2023),</p>
+        <p>NBA Accredited (2006-09),Approved by AICTE, New Delhi</p>
+      </td>
+      <td rowspan="2"><img src="images\NAAC.png"></td>
+    </tr>
+  </table>
+
+  <header>
+    <div class="navbar">
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="placement.html">Placements</a></li>
+          <li><a href="addmission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"> <u> Department </u></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="cse.html">CSE</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+  </header>
+  <br>
+  
+  <div class="container2">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.354169271459!2d77.32167261108285!3d19.17972724863249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d6fbe138ad81%3A0x9e88bbe86ec52250!2sMGM&#39;s%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1686501301139!5m2!1sen!2sin"
+        width="100%" height="100%" style="border:0;"></iframe>
+    </div>
+    <div class="lord">
+      <div class="contact">
+        <h3>Contact Us</h3>
+        MGM's College Of Engineering,Nanded<br>
+        Nanded Bypass Rd, Hingoli Naka, Ambekar Nagar, Nanded-Waghala, Maharashtra 431601
+      </div>
+      <div class="phone">
+        Phone : +91 9876786345<br>
+        Email : admission@mgmcen.ac.in
+      </div>
+
+
+
+      <div class="social">
+        <a href=""><span class="fa fa-facebook"></span></a>
+        <a href=""><span class="fa fa-linkedin"></span></a>
+        <a href=""><span class="fa fa-skype"></span></a>
+        <a href=""><span class="fa fa-youtube-play"></span></a>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <footer>
+
+    <p>&copy; 2023 MGMCOE All rights reserved.</p>
+
+
+  </footer>
+
+</html>
